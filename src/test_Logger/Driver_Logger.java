@@ -1,13 +1,14 @@
 package test_Logger;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 
 public class Driver_Logger {
-
-	Logger logger = LogManager.getLogger(LogManager.ROOT_LOGGER_NAME);
+	
+	final static Logger logger = Logger.getLogger(Driver_Logger.class);
 
 	public static void main(String args[]) {
 		System.out.println("Starting driver logger test");
+		logger.info("Entering the Execute Method");
 	}
 }
